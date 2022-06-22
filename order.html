@@ -720,7 +720,7 @@
             var reader = new FileReader();
             reader.onload = function(e) {
                 $('#imagePreview').css({
-                    'background-image', 'url('+e.target.result +')',
+                    'background-image': 'url('+e.target.result +')',
                     'border-radius':'5px'
                 });
                 $('#imagePreview').hide();
