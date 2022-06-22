@@ -1,0 +1,216 @@
+html {
+    scroll-behavior: smooth;
+  }
+  /* For best practice, move CSS below to an external CSS file. */
+  @keyframes fadeinall {
+  0% {
+    opacity: 1; }
+  97% {
+    opacity: 0; }
+  98% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  99% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+  #loader {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #fff;
+    z-index: 999999999;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeinall 3s normal both;
+    animation: fadeinall 3s normal both;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+
+    .gradient{
+      background: rgb(45,46,113);
+      background: linear-gradient(320deg, #1e22757c 0%, #4d4be3 35%, #6252b5 100%);
+    }
+    .radius{
+      border-radius: 10px;
+    }
+    body{
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    h1{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold !important;
+    }
+    h2{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold !important;
+    }
+    #bggradient
+      {
+          font-size:30px;
+          background: linear-gradient(140deg, #1e22757c, #4d4be3, #6252b5, #8f85d8);
+          background-size: 200% 200%;
+
+          -webkit-animation: Animation 5s ease infinite;
+          -moz-animation: Animation 5s ease infinite;
+          animation: Animation 5s ease infinite;
+      }
+
+      @-webkit-keyframes Animation {
+          0%{background-position:10% 0%}
+          50%{background-position:91% 100%}
+          100%{background-position:10% 0%}
+      }
+      @-moz-keyframes Animation {
+          0%{background-position:10% 0%}
+          50%{background-position:91% 100%}
+          100%{background-position:10% 0%}
+      }
+      @keyframes Animation { 
+          0%{background-position:10% 0%}
+          50%{background-position:91% 100%}
+          100%{background-position:10% 0%}
+      }
+
+      .linear-wipe {
+        background: linear-gradient(to right, #c4a671 20%, #825a2b 40%, #718993 60%, #232e33 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: textShine 7s ease-in-out infinite alternate;
+      }
+      
+      @keyframes textShine {
+        to {
+          background-position: 200%;
+        }
+      }
+      .howitworks{
+        background-color: #e5e5f7;
+        opacity: 1;
+        background-image: radial-gradient(#4d4be3 0.5px, #e5e5f7 0.5px);
+        background-size: 10px 10px;
+      }
+      .glass{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(3.7px);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+      
+      .glass2{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(3.7px);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      /* HIDE RADIO */
+        [type=radio] { 
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        /* IMAGE STYLES */
+        [type=radio] + img {
+            cursor: pointer;
+        }
+        
+        /* CHECKED STYLES */
+        [type=radio]:checked + img {
+            outline: 2px solid #4d4be3;
+        }
+
+        .formimg{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .avatar-upload {
+            position: relative;
+            max-width: 100%;
+            margin: 5px auto;
+       }
+        .avatar-upload .avatar-edit {
+            position: absolute;
+            right: 12px;
+            z-index: 1;
+            top: 10px;
+       }
+        .avatar-upload .avatar-edit input {
+            display: none;
+       }
+        .avatar-upload .avatar-edit input + label {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            margin-bottom: 0;
+            border-radius: 100%;
+            background: #FFFFFF;
+            border: 1px solid transparent;
+            box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12);
+            cursor: pointer;
+            font-weight: normal;
+            transition: all .2s ease-in-out;
+       }
+        .avatar-upload .avatar-edit input + label:hover {
+            background: #f1f1f1;
+            border-color: #d6d6d6;
+       }
+        .avatar-upload .avatar-edit input + label:after {
+            content: "\f040";
+            font-family: 'FontAwesome';
+            color: #757575;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: auto;
+       }
+        .avatar-upload .avatar-preview {
+            width: 100%;
+            height: 50vh;
+            position: relative;
+            border-radius: 20px;
+            border: 2px solid #4d4be3;
+            padding: 5px 0;
+            box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+            object-fit: cover;
+       }
+        .avatar-upload .avatar-preview > div {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* object-fit: cover; */
+       }
+       .table > tbody > tr > .no-line {
+        border-top: none;
+    }
+    
+    .table > thead > tr > .no-line {
+        border-bottom: none;
+    }
+    
+    .table > tbody > tr > .thick-line {
+        border-top: 2px solid;
+    }
