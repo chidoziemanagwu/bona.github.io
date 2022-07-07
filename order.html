@@ -150,11 +150,13 @@
                     </h4>
                 <small>Select your preferred outfit</small>
                 <hr>
-                <select class="form-select mb-2" aria-label="Default select example">
+                <select class="form-select mb-3" aria-label="Default select example" id="outifittype">
                     <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="Senator">Senator</option>
+                    <option value="Agbada">Agbada</option>
+                    <option value="Ishiagu">Ishiagu</option>
+                    <option value="Beach Wears">Beach Wears</option>
+                    <option value="Ankara">Ankara</option>
                 </select>                  
                 <small >Select Material Quality</small><br>
                 <select class="form-select mb-2" aria-label="Default select example">
@@ -303,20 +305,91 @@
                     </h4>
                 <small>Enter your Measurements</small><br>
                 <hr>
-                <div class="form-outline mb-2">
-                    <input type="text" id="form12" class="form-control" />
-                    <label class="form-label" for="form12">Measurement 1</label>
-                  </div>
-                  <div class="form-outline mb-2">
-                    <input type="text" id="form12" class="form-control" />
-                    <label class="form-label" for="form12">Measurement 2</label>
-                  </div>
-                  <div class="form-outline mb-2">
-                    <input type="text" id="form12" class="form-control" />
-                    <label class="form-label" for="form12">Measurement 3</label>
-                  </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 340 340"><path d="M153.784 26.31s32.8 51.033 86.664 4l11.338 38.34-26.444 29.341H150.72l-21.735-23.908z" style="fill:#7b8bba"/><path d="M153.784 26.31c-11.752 64.113 73.71 84.108 86.664 4 0 0 23.547 14.416 50.379 34.146a27.817 27.817 0 0 1 10.383 15.227c5.471 20.453 18.228 69.66 22.648 99.8a57.615 57.615 0 0 1 .21 15.134c-2.3 19.466-8.885 74.506-12.51 98.794 0 0-24.444 7.555-44.888-4.444 0 0 7.038-53.176 9.378-92.414a26.355 26.355 0 0 0-3.165-14.145l-19.871-36.582s-22.786 101.364-23.675 157.363c0 0-64.442 36-149.773-25.333L96.9 196.528l-46.225 52.887S26.2 251.17 15.532 220.06l41.246-49.752a44.9 44.9 0 0 0 8.529-16.048c5.378-18.379 17.607-60.783 23.365-85.747a25.608 25.608 0 0 1 10.059-15.12 201.044 201.044 0 0 1 55.053-27.083z" style="fill:#bac9e8"/><path d="M50.926 252.906a3.5 3.5 0 0 0 2.386-1.188l37.353-42.741-14.524 68.152a3.5 3.5 0 0 0 1.379 3.571c45.191 31.512 78.3 37.1 109.1 36.32 27.5-1.767 47.367-10.082 46.214-13.773 4.57-84.679 22.922-148.242 29.558-185.11.859-4.445-5.8-5.983-6.85-1.437-6.793 37.286-24.577 99.322-29.664 184.3-40.925 16.114-85.5 13.639-142.416-24.666 9.245-40.352 25.18-122.157 31.974-163.07 2.331-10.784-2.845-20.267-7-29.778-1.893-4.165-8.183-1.49-6.421 2.787 3.286 7.784 8.622 17 6.535 25.751l-14.926 82.929-44.536 50.961c-4.771-.231-21.09-2.7-29.586-25.159l39.971-48.213a48.131 48.131 0 0 0 9.193-17.3c5.1-17.44 17.6-60.725 23.416-85.943a22.1 22.1 0 0 1 8.681-13.057 197.393 197.393 0 0 1 48.845-24.851c-6.916 63.6 78.362 79.789 93.391 4.644 8.025 5.081 26.082 16.774 45.755 31.24a24.4 24.4 0 0 1 9.075 13.312c5.316 19.871 18.156 69.335 22.566 99.407a54.2 54.2 0 0 1 .2 14.214c-2.491 21.052-8.546 71.575-12.159 96.4-5.842 1.347-22.884 4.221-37.987-3.553 1.386-10.787 7.054-56.07 9.095-90.291a29.837 29.837 0 0 0-3.583-16.024l-9.661-17.773c-2.3-4.035-8.263-.705-6.151 3.342l9.655 17.772a22.844 22.844 0 0 1 2.746 12.267c-2.3 38.659-9.284 91.632-9.354 92.162a3.5 3.5 0 0 0 1.7 3.478c20.968 12.352 51.324 6.386 50.121 1.943 3.577-23.964 9.951-77.146 12.525-98.9a61.068 61.068 0 0 0-.224-16.054c-4.463-30.433-17.382-80.21-22.729-100.2A31.425 31.425 0 0 0 292.9 61.636c-26.643-19.592-50.387-34.166-50.625-34.311a3.619 3.619 0 0 0-3.3-.188c-33.828 30.444-65.065 21.768-82.853-3.436a3.544 3.544 0 0 0-3.4-.726A203.362 203.362 0 0 0 96.7 50.543a29.1 29.1 0 0 0-11.438 17.184c-5.776 25.04-18.229 68.169-23.315 85.55a41.166 41.166 0 0 1-7.863 14.8l-41.246 49.749a3.5 3.5 0 0 0-.616 3.369c11.407 33.272 38.426 31.727 38.704 31.711zM156.462 35.193c20.291 22.384 51.208 25.1 78.673 3.866-14.309 58.799-81.504 48.741-78.673-3.866z" style="fill:#3f3f70"/></svg>
+                            Top Measurement
+                        </p>
+                        <small>Select Sleeve Length</small><br>
+                        <select class="form-select mb-2" aria-label="Default select example" id="sleevetype">
+                            <option value="Long Sleeve">Long Sleeve</option>
+                            <option value="3/4 Sleeve">3/4 Sleeve</option>
+                            <option value="Short Sleeve">Short Sleeve</option>
+                        </select>
+                        <div class="form-outline mb-2">
+                            <input type="text" id="form12" class="form-control" />
+                            <label class="form-label" for="form12">Neck Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Shoulder Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Chest Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                            <input type="text" id="form12" class="form-control" />
+                            <label class="form-label" for="form12">Tummy Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Sleeve Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                        <input type="text" id="form12" class="form-control" id="forshortsleeve"/>
+                        <label class="form-label" for="form12">Upper Arm/Biceps Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2" id="for34">
+                        <input type="text" id="form12" class="form-control"/>
+                        <label class="form-label" for="form12">Lower Arm/Forearm Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2" id="forlongsleeve">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Wrist Measurement</label>
+                        </div>
+                        <div class="form-outline mb-2" id="foragbada">
+                        <input type="text"  class="form-control" />
+                        <label class="form-label" for="form12">Agbada Measurement</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <p class="mb-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 340 340"><path d="M105.829 12.837s68.877-8.984 142.888 0l-8.984 15.829-97.54 27.807z" style="fill:#7b8bba"/><path d="M163.583 36.366v5.99l-57.754-29.519s-17.112 228.877-18.4 306.311l21.818 11.978 34.225-20.107s16.257-145.882 31.23-177.112l10.7 4.278s10.268 127.059 8.556 170.268c0 0 18.4 14.808 39.359 20.534l19.251-12.834s-8.984-224.6-3.85-303.316z" style="fill:#bac9e8"/><path d="m103.771 40.962 43.678 22.3a3.5 3.5 0 0 0 3.184-6.234L104.32 33.382l-.549 7.58z" style="fill:#7b8bba"/><path d="M191.763 311.179c.775.623 19.21 15.332 40.63 21.185a3.6 3.6 0 0 0 2.01-.066 4.155 4.155 0 0 0 .855-.4l19.251-12.835a3.5 3.5 0 0 0 1.555-3.052c-.3-2.579-8.66-226.252-3.942-303.921a3.463 3.463 0 0 0-2.531-2.627c-73.1-9.14-143.778-.155-144.215-.1a3.565 3.565 0 0 0-3.038 3.222c-5.187 70.717-16.9 233.762-18.4 306.5a3.5 3.5 0 0 0 1.816 3.126l21.813 11.989a3.555 3.555 0 0 0 3.457-.051l34.225-20.106a3.5 3.5 0 0 0 1.706-2.63c.157-1.411 15.411-137.2 29.606-172.99l5.524 2.209c1.336 16.937 9.936 128.262 8.376 167.687a3.5 3.5 0 0 0 1.302 2.86zm38.076-296.755L182.538 27.5 162.65 33a3.53 3.53 0 0 0-2.567 3.642l-42.166-21.557c20.108-1.844 63.853-4.711 111.922-.661zm15.093 3.09c-.3 5.622-.547 11.869-.737 18.625l-18.74 5.122V22.9zm-26.477 7.318v18.342l-5.076 1.387V26.235zm-12.076 3.338v18.305l-18.415 5.033-.9-18zm-25.33 25.23-12.821 3.5c-.154-2.355-1.374-15.84-1.145-17.871l13.067-3.612zM108.93 18.353l12.62 6.45v17.376l-13.843-7.068c.526-7.261.944-12.973 1.223-16.758zm-2.989 306.962-14.97-8.215c1.2-61.208 11.6-210.652 16.188-274.406l24.461 12.49c-2.698 21.903-22.567 185.307-25.679 270.131zM188.889 137.9a3.5 3.5 0 0 0-2.188-2.968c-5.07-2.109-15.275-6.031-20.448-7.787-4.352-1.481-6.675 4.955-2.369 6.588l6.142 2.208c-13.863 35.371-27.926 156.161-29.832 172.945l-27.232 16c3.078-81.993 21.671-236.715 25.294-266.318l11.638 5.942a3.5 3.5 0 1 0 3.184-6.234L128.55 45.753V28.38l6.15 3.144v10.832c.079 4.6 6.922 4.6 7 0V35.1l18.546 9.479s1.331 17.038 1.33 17.043l3.078 39.451a3.454 3.454 0 0 0 .272 1.1c.2.458 5 11.218 22.263 11.218a3.5 3.5 0 0 0 3.5-3.68l-2.021-39.407c-.311-4.615-7.143-4.235-6.99.36l1.821 35.51c-8.039-.988-11.129-5.071-11.917-6.364l-2.794-35.808 75.232-20.563c-1.909 88.717 4.214 251.154 4.978 270.885l-12.398 8.268c-.766-20.5-2.451-48.934-5.019-84.664a3.5 3.5 0 0 0-6.983.5c2.62 36.449 4.318 65.257 5.057 85.77-14.949-5.107-27.993-14.327-32.137-17.427 1.36-44.557-8.527-167.612-8.629-168.871z" style="fill:#3f3f70"/><path d="M223.372 221.668c.219 4.726 7.243 4.348 6.991-.349-.363-4.554-7.105-4.206-6.991.349zM225.6 208.4a3.506 3.506 0 0 0 3.494-3.77c-5.557-72.033-12.084-142.852-12.15-143.559a3.5 3.5 0 0 0-6.971.644c.066.706 6.589 71.475 12.142 143.454a3.5 3.5 0 0 0 3.485 3.231zM174.7 49.344c4.148.038 4.762-6.154.69-6.93-4.99-.836-5.735 6.77-.69 6.93z" style="fill:#3f3f70"/></svg>
+                            Bottom Measurement
+                        </p>
+                        <small>Bottom Type</small><br>
+                        <select class="form-select mb-2" aria-label="Default select example" id="bottomtype">
+                            <option value="Trouser">Trouser</option>
+                            <option value="Short">Short</option>
+                        </select>
+                        
+                        <div class="form-outline mb-2">
+                            <input type="text" id="form12" class="form-control" />
+                            <label class="form-label" for="form12">Length</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Waist</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Laps</label>
+                        </div>
+                        <div class="form-outline mb-2">
+                            <input type="text" id="form12" class="form-control" />
+                            <label class="form-label" for="form12">Knee</label>
+                        </div>
+                        <div class="form-outline mb-2" id="forankle">
+                        <input type="text" id="form12" class="form-control" />
+                        <label class="form-label" for="form12">Ankle</label>
+                        </div>
+                    </div>
+                </div>
                 
-                <h4 class="mt-4">Step 3 (Optional) 
+                <h4 class="mt-4">Step 3 
                     <?xml version="1.0" encoding="iso-8859-1"?>
                     <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg width="20" height="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -358,9 +431,29 @@
                     </g>
                     </svg>
                     </h4>
-                <small>Upload a picture of your preferred style</small><br>
-                <hr>
-                <div class="avatar-upload">
+                <small>Select or Upload a picture of your preferred style</small><br>
+                <hr>                  
+                <select class="form-select mb-2" aria-label="Default select example" id="selectstyle">
+                    <option value="select">Select a style</option>
+                    <option value="upload">Upload a photo of my preferred style</option>
+                </select>  
+                <div id="selectstylediv">
+                    <small class="mt-2">Select a Style</small><br>
+                    <label>
+                    <input type="radio" name="test" value="small" checked>
+                    <img class="formimg2 radius mb-1 me-1" src="img/cloth1.jpg">
+                    </label>
+                    <label>
+                    <input type="radio" name="test" value="small" checked>
+                    <img class="formimg2 radius mb-1 me-1" src="img/cloth2.jpg">
+                    </label>
+                    <label>
+                    <input type="radio" name="test" value="small" checked>
+                    <img class="formimg2 radius mb-1 me-1" src="img/cloth3.jpg">
+                    </label>
+                </div>
+
+                <div class="avatar-upload" id="uploaddiv">
                     <div class="avatar-edit">
                         <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
                         <label for="imageUpload"></label>
@@ -652,7 +745,11 @@
                                         <tbody class="bg-white">
                                             <!-- foreach ($order->lineItems as $line) or some such thing here -->
                                             <tr>
-                                                <td>Senator Outfit</td>
+                                                <td>Senator Outfit (Top)</td>
+                                                <td class="text-center">₦25,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Senator Outfit (Bottom)</td>
                                                 <td class="text-center">₦25,000</td>
                                             </tr>
                                             <tr>
@@ -661,7 +758,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="no-line"><strong>Total</strong></td>
-                                                <td class="no-line text-center"><b>₦27,000</b></td>
+                                                <td class="no-line text-center"><b>₦52,000</b></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -703,6 +800,69 @@
       ></script>
     <script type="text/javascript">
       (function($){
+        
+        $('#foragbada').hide();
+        $('#uploaddiv').hide();
+
+        $("#outifittype").change(function(){
+        if($("#outifittype").val()=="Agbada")
+        {
+            //alert("Hide input field here.");
+            //$("#jmtest").hide();
+            $('#foragbada').show();
+        } else{
+            
+            $('#foragbada').hide();
+        }
+    })
+
+    $("#selectstyle").change(function(){
+        if($("#selectstyle").val()=="select")
+        {
+            //alert("Hide input field here.");
+            //$("#jmtest").hide();
+            $('#selectstylediv').show();
+            $('#uploaddiv').hide();
+        } else{
+            
+            $('#uploaddiv').show();
+            $('#selectstylediv').hide();
+        }
+    })
+
+
+    $("#sleevetype").change(function(){
+        if($("#sleevetype").val() == "3/4 Sleeve")
+        {
+            //alert("Hide input field here.");
+            //$("#jmtest").hide();
+            $('#forlongsleeve').hide();
+        }
+        else if($("#sleevetype").val() == "Short Sleeve")
+        {
+            //alert("Hide input field here.");
+            //$("#jmtest").hide();
+            $('#forlongsleeve').hide();
+            $('#for34').hide();
+        }else{
+            
+            $('#forlongsleeve').show();
+            $('#for34').show();
+        } 
+    })
+
+    $("#bottomtype").change(function(){
+        if($("#bottomtype").val() == "Short")
+        {
+            //alert("Hide input field here.");
+            //$("#jmtest").hide();
+            $('#forankle').hide();
+        }else{
+            
+            $('#forankle').show();
+        }
+    })
+
         $('.i-accept').on('click', function() {   
           if(localStorage.noshow !== '1') {
             $('#cookie-notice').addClass('d-none');
@@ -715,6 +875,7 @@
       })(jQuery);
     </script>
     <script type="text/javascript">
+        
     window.onload = function(){
       setTimeout(function(){
         document.getElementById("loader").remove();
@@ -737,6 +898,7 @@
     $("#imageUpload").change(function() {
         readURL(this);
     });
+
     };
     </script>
   </body>
